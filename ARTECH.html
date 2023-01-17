@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Arch Destiny</title>
+    <link rel="shortcut icon" href="arch.png" type="image-icon">
+</head>
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+
+    nav .menu-link a {
+        margin: 0 10px;
+        padding: 5px;
+    }
+
+    nav .menu-link a:hover {
+        opacity: 0.5;
+    }
+
+    nav .icon {
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        display: none;
+    }
+
+    .logo {
+        width: 36px;
+    }
+
+    .section1 {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url("building.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section1 .arrow {
+        cursor: pointer;
+    }
+
+    .section3 .box {
+        position: relative;
+        width: 50%;
+        transition: 0.5s;
+    }
+
+    .section3 .box:hover {
+        z-index: 2;
+        transform: scale(1.1);
+        box-shadow: 0 20px 30px red;
+
+    }
+
+
+
+    .section3 .img-box .mimg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    @media only screen and (min-width: 360px) and (max-width: 990px) {
+        nav .menu-link {
+            height: 100%;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            right: -100%;
+            top: 0;
+            padding: 3% 0;
+            padding-right: 15%;
+            padding-left: 3%;
+            background-color: rgb(42, 40, 40);
+            transition: 1s;
+        }
+
+        nav .menu-link.active {
+            right: 0;
+        }
+
+        nav .icon {
+            display: block;
+            color: red;
+            transition: 1s;
+
+        }
+
+        nav .icon.active {
+            display: block;
+            color: lightblue;
+            transform: rotate(90deg);
+            transition: 1s;
+        }
+
+        nav .menu-link a {
+            margin: 10% 0;
+        }
+
+        .arrow {
+            font-size: 0%;
+        }
+    }
+</style>
+
+<body>
+    <nav style="background-color: rgb(10, 10, 10,0.8); position: fixed; width: 100%; z-index: 99;">
+        <div class="container pt-3 text-light text-uppercase">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h4 class=""><span class=""><img src="arch.png" alt="" class="logo pe-1"></span><span
+                            class="text-primary">AR</span>TECH
+                    </h4>
+                </div>
+                <div class="menu-link">
+                    <a href="#" class="text-decoration-none text-light">Home</a>
+                    <a href="#" class="text-decoration-none text-light">about</a>
+                    <a href="#" class="text-decoration-none text-light">product</a>
+                    <a href="#" class="text-decoration-none text-light">blog</a>
+                    <a href="#" class="text-decoration-none text-light">contact</a>
+                </div>
+            </div>
+            <div><i class="bi bi-three-dots icon display-6"></i></div>
+        </div>
+    </nav>
+    <section class="section1">
+        <div class="container-md">
+            <div class="row">
+                <div class="arrow col-1 d-flex align-items-center">◀️
+                </div>
+                <div class="col-md-10 text-center">
+                    <img src="randomp.jpg" alt="" class="rounded-circle" style="width: 10%;">
+                    <h2 class="text-black text-uppercase pt-2 pb-2">constant development of new technologies</h2>
+                    <p class="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo iusto commodi
+                        corporis vero molestiae error, cum saepe eveniet qui, asperiores nesciunt numquam deleniti
+                        voluptatibus. Eius consectetur eligendi et autem temporibus. Eius consectetur eligendi et!</p>
+                    <div class="pt-3">
+                        <button type="button" class="btn btn-danger text-uppercase rounded-1">click here</button>
+                        <button type="button" class="btn btn-light text-uppercase rounded-1">join us</button>
+                    </div>
+                </div>
+                <div class="arrow col-1 d-flex align-items-center justify-content-end">▶️</div>
+            </div>
+        </div>
+    </section>
+    <section class="section2 pt-4 pb-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <img src="constworker.jpg" alt="" class="w-75 rounded-circle">
+                    <h4 class="text-secondary text-uppercase">planning</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum qui nobis, hic, non quod a
+                        numquam sed repudiandae ducimus.</p>
+                    <button type="button" class="btn btn-danger text-uppercase">more</button>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="constdraw.jpg" alt="" class="w-75 rounded-circle">
+                    <h4 class="text-secondary text-uppercase">drawing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum qui nobis, hic, non quod a
+                        numquam sed repudiandae ducimus.</p>
+                    <button type="button" class="btn btn-danger text-uppercase">more</button>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="constmodel.jpg" alt="" class="w-75 rounded-circle">
+                    <h4 class="text-secondary text-uppercase">modeling</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum qui nobis, hic, non quod a
+                        numquam sed repudiandae ducimus.</p>
+                    <button type="button" class="btn btn-danger text-uppercase">more</button>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <img src="constdesign.jpg" alt="" style="width: 90%;" class="rounded-circle">
+                    <h4 class="text-secondary text-uppercase">designing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum qui nobis,
+                        hic, non quod anumquam sed repudiandae ducimus.</p>
+                    <button type="button" class="btn btn-danger text-uppercase">more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3 pt-2 pb-1" style="background-color: lightgrey;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-secondary text-uppercase">latest works</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box col-md-6 mb-3">
+                    <div class="img-box">
+                        <img src="house1.jpg" alt="" class="mimg">
+                    </div>
+                    <div class="img-content">
+                        <h4 class="text-center">Duplex Bungalow</h4>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="box col-md-6">
+                    <div class="img-box">
+                        <img src="house1.jpg" alt="" class="mimg">
+                    </div>
+                    <div class="img-content">
+                        <h4 class="text-center">Duplex Bungalow</h4>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const Icon = document.querySelector(".icon")
+        const menuLink = document.querySelector(".menu-link")
+
+        Icon.addEventListener("click", () => {
+            Icon.classList.toggle("active")
+            menuLink.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>
